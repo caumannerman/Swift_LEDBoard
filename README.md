@@ -35,3 +35,17 @@ SegueWay 객체는  StoryBoard 상의  화살표로 나타난다.
 
 ==> 코드 없이 storyboard만으로 설정 
 ==> Show, Show Detail, Present Modally, Present PopOver, Custom 총 5가지 방식 존재.
+이들이 2,3번에 포함된다. Show가 NavigationController에 Push하는 방식이고, Present가 2번의 Present방식에 포함된다.
+
+# 앱 구성 
+
+설정에서  전광판에 표시할 글자와 색, 배경색을 지정할 수 있다.
+
+<p>
+<img width="300" alt="스크린샷 2022-04-12 오후 2 15 50" src="https://user-images.githubusercontent.com/75043852/162885929-8d50414e-185a-4036-b6df-3bd36d61c794.png">
+<img width="300" alt="스크린샷 2022-04-12 오후 2 16 29" src="https://user-images.githubusercontent.com/75043852/162885937-ad61dc87-638d-4bae-9c06-f9be4bd99d8a.png">
+<img width="300" alt="스크린샷 2022-04-12 오후 2 16 48" src="https://user-images.githubusercontent.com/75043852/162885945-4ec2516e-b23c-4c7a-a353-ade760f1c618.png">
+</p>
+전광판 하단의 "화면전환 예시보기" 버튼으로 들어가, Segueway, Code를 이용한 NavigationController로의 Push 그리고 Present 방식 예시를 구현하였다.
+<img width="677" alt="스크린샷 2022-04-12 오후 2 15 00" src="https://user-images.githubusercontent.com/75043852/162885742-0126cf52-4679-4a50-abbf-da5d33154da1.png">
+
