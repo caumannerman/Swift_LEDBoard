@@ -16,6 +16,8 @@
 		A52EAA22277AF5CF0031E8A5 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52EAA21277AF5CF0031E8A5 /* SettingViewController.swift */; };
 		A5375D5928052CE3000D7263 /* SeguePushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5375D5828052CE3000D7263 /* SeguePushViewController.swift */; };
 		A5375D5B280531F2000D7263 /* SeguePresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5375D5A280531F2000D7263 /* SeguePresentViewController.swift */; };
+		A5A3CFF128053DFA004F6AF8 /* CodePushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A3CFF028053DFA004F6AF8 /* CodePushViewController.swift */; };
+		A5A3CFF328053E54004F6AF8 /* ChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A3CFF228053E54004F6AF8 /* ChangeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		A52EAA21277AF5CF0031E8A5 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		A5375D5828052CE3000D7263 /* SeguePushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeguePushViewController.swift; sourceTree = "<group>"; };
 		A5375D5A280531F2000D7263 /* SeguePresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeguePresentViewController.swift; sourceTree = "<group>"; };
+		A5A3CFF028053DFA004F6AF8 /* CodePushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePushViewController.swift; sourceTree = "<group>"; };
+		A5A3CFF228053E54004F6AF8 /* ChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				A52EAA21277AF5CF0031E8A5 /* SettingViewController.swift */,
 				A5375D5828052CE3000D7263 /* SeguePushViewController.swift */,
 				A5375D5A280531F2000D7263 /* SeguePresentViewController.swift */,
+				A5A3CFF028053DFA004F6AF8 /* CodePushViewController.swift */,
+				A5A3CFF228053E54004F6AF8 /* ChangeViewController.swift */,
 			);
 			path = LEDBoard_Swift;
 			sourceTree = "<group>";
@@ -149,8 +155,10 @@
 			files = (
 				A52EAA12277AE1D40031E8A5 /* ViewController.swift in Sources */,
 				A5375D5928052CE3000D7263 /* SeguePushViewController.swift in Sources */,
+				A5A3CFF328053E54004F6AF8 /* ChangeViewController.swift in Sources */,
 				A5375D5B280531F2000D7263 /* SeguePresentViewController.swift in Sources */,
 				A52EAA0E277AE1D40031E8A5 /* AppDelegate.swift in Sources */,
+				A5A3CFF128053DFA004F6AF8 /* CodePushViewController.swift in Sources */,
 				A52EAA10277AE1D40031E8A5 /* SceneDelegate.swift in Sources */,
 				A52EAA22277AF5CF0031E8A5 /* SettingViewController.swift in Sources */,
 			);

@@ -236,10 +236,10 @@
             </objects>
             <point key="canvasLocation" x="1186.9565217391305" y="83.705357142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Change View Controller-->
         <scene sceneID="ncE-C1-eBf">
             <objects>
-                <viewController id="uQI-pD-w55" sceneMemberID="viewController">
+                <viewController id="uQI-pD-w55" customClass="ChangeViewController" customModule="LEDBoard_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jfa-cm-VTV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -264,6 +264,9 @@
                                 <rect key="frame" x="50" y="360" width="314" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="코드로 Push(Navigation)"/>
+                                <connections>
+                                    <action selector="tapCodePushButton:" destination="uQI-pD-w55" eventType="touchUpInside" id="puL-xD-bkA"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pNS-uX-XaX">
                                 <rect key="frame" x="50" y="471" width="314" height="31"/>
@@ -348,22 +351,46 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8G9-Od-pYC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2625" y="2038"/>
+            <point key="canvasLocation" x="1813" y="1606"/>
         </scene>
-        <!--View Controller-->
+        <!--Code Push View Controller-->
         <scene sceneID="RR5-yf-R7G">
             <objects>
-                <viewController id="gD9-a8-erL" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CodePushViewController" id="gD9-a8-erL" customClass="CodePushViewController" customModule="LEDBoard_Swift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7A6-Ia-S1i">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="코드로 Push 완료" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMG-QU-Yjk">
+                                <rect key="frame" x="50" y="144" width="314" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4Z-oG-qrp">
+                                <rect key="frame" x="50" y="370.5" width="314" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="돌아가기"/>
+                                <connections>
+                                    <action selector="tapBackButton:" destination="gD9-a8-erL" eventType="touchUpInside" id="UtX-19-dCP"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="FhH-Lq-eaO"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="U4Z-oG-qrp" firstAttribute="leading" secondItem="FhH-Lq-eaO" secondAttribute="leading" constant="50" id="DY6-qu-l0E"/>
+                            <constraint firstItem="vMG-QU-Yjk" firstAttribute="top" secondItem="FhH-Lq-eaO" secondAttribute="top" constant="100" id="VPh-bI-NlH"/>
+                            <constraint firstItem="FhH-Lq-eaO" firstAttribute="trailing" secondItem="vMG-QU-Yjk" secondAttribute="trailing" constant="50" id="nja-TU-qiF"/>
+                            <constraint firstItem="U4Z-oG-qrp" firstAttribute="top" secondItem="vMG-QU-Yjk" secondAttribute="bottom" constant="200" id="pPV-G9-B14"/>
+                            <constraint firstItem="vMG-QU-Yjk" firstAttribute="leading" secondItem="FhH-Lq-eaO" secondAttribute="leading" constant="50" id="vxA-rJ-8m2"/>
+                            <constraint firstItem="FhH-Lq-eaO" firstAttribute="trailing" secondItem="U4Z-oG-qrp" secondAttribute="trailing" constant="50" id="w2v-IJ-cWr"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zR4-eI-HEv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2625" y="1378"/>
+            <point key="canvasLocation" x="777" y="1606"/>
         </scene>
         <!--Segue Present View Controller-->
         <scene sceneID="KSK-Qx-REk">
