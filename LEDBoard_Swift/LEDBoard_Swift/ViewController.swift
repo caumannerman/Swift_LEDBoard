@@ -13,10 +13,12 @@ class ViewController: UIViewController, LEDBoardSettingDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //초기 세팅을 viewDidLoad()에서 설정 
         self.contentsLabel.textColor = .yellow
         // Do any additional setup after loading the view.
     }
     
+    //segueway로 구현했기 때문에, prepare로 데이터를 받아옴
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let settingViewController = segue.destination as? SettingViewController {
             settingViewController.delegate = self

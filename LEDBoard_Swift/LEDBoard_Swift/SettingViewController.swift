@@ -22,6 +22,7 @@ class SettingViewController: UIViewController {
     @IBOutlet weak var blueBtn: UIButton!
     @IBOutlet weak var orangeBtn: UIButton!
     
+    
     weak var delegate: LEDBoardSettingDelegate?
     var ledText: String?
     var textColor: UIColor = .yellow
@@ -33,7 +34,7 @@ class SettingViewController: UIViewController {
         self.configureView()
 
     }
-    
+    //이전 화면에서 전달받은 항목들을 화면에 적용시켜주는 함수 ( state property로  데이터 바인딩이 되어있지 않기 때문에 일일 이 수정을 해줘야함
     private func configureView() {
         if let ledText = self.ledText {
             self.textField.text = ledText
@@ -71,6 +72,7 @@ class SettingViewController: UIViewController {
     
     @IBAction func tapSaveBtn(_ sender: UIButton) {
         self.delegate?.changedSetting(
+            //사용자가 입력한 텍스트를 넘겨줌 
             text: self.textField.text,
             textColor: self.textColor,
             backgroundColor: self.backgroundColor
