@@ -49,3 +49,41 @@ SegueWay 객체는  StoryBoard 상의  화살표로 나타난다.
 전광판 하단의 "화면전환 예시보기" 버튼으로 들어가, Segueway, Code를 이용한 NavigationController로의 Push 그리고 Present 방식 예시를 구현하였다.
 <img width="677" alt="스크린샷 2022-04-12 오후 2 15 00" src="https://user-images.githubusercontent.com/75043852/162885742-0126cf52-4679-4a50-abbf-da5d33154da1.png">
 
+## 구현한 각 화면 전환에서, 간단한 String을 전달하여 Label에 표시하였고, popViewController()혹은 dismiss를 하여 돌아올 때, 새로운 String을 되돌려받아서 Label에 표시해보았다.
+
+### 초기화면
+<img width="200" alt="스크린샷 2022-04-12 오후 4 55 44" src="https://user-images.githubusercontent.com/75043852/162915733-d6ae0d80-29e6-48b0-8805-2926e4e1b5eb.png">
+
+### 1. 코드로 Push클릭시 & popViewController 시, delegate와 protocol을 통해 popViewController과 함께 되돌려받은 String Label이 표현된 화면
+
+<p>
+<img width="200" alt="스크린샷 2022-04-12 오후 4 56 07" src="https://user-images.githubusercontent.com/75043852/162916412-56f69a60-6137-4927-b6fc-d15b4757162a.png">
+<img width="200" alt="스크린샷 2022-04-12 오후 4 56 14" src="https://user-images.githubusercontent.com/75043852/162916424-c3c8b543-50df-4993-82e5-9c3e1522590b.png">
+
+</p>
+
+### 2. 코드로 Present클릭 시의 data전달 화면 & delegate와 protocol을 통해 dismiss와 함께 되돌려받은 String Label이 표현된 화면
+
+<p>
+<img width="200" alt="스크린샷 2022-04-12 오후 4 56 23" src="https://user-images.githubusercontent.com/75043852/162916385-fd4424bf-09d1-47df-af77-3d9a25c746c0.png">
+<img width="200" alt="스크린샷 2022-04-12 오후 4 56 32" src="https://user-images.githubusercontent.com/75043852/162916401-9787bb4f-8e2a-4b82-9c48-ac9e433bc71d.png">
+
+
+</p>
+
+### 3. SegueWay로 Push  시의 data전달 화면 & delegate와 protocol을 통해 popViewController과 함께 되돌려받은 String Label이 표현된 화면
+
+<p>
+<img width="200" alt="스크린샷 2022-04-12 오후 4 58 31" src="https://user-images.githubusercontent.com/75043852/162916452-b02740ae-f15b-4b02-a3b5-dbc0cf8dacca.png">
+<img width="200" alt="스크린샷 2022-04-12 오후 4 59 36" src="https://user-images.githubusercontent.com/75043852/162916461-66892ec1-3cbd-4dc7-b147-5435eab0fd19.png">
+
+</p>
+
+### 4. SegueWay로 Present클릭 시의 data전달 화면 & delegate와 protocol을 통해 dismiss와 함께 되돌려받은 String Label이 표현된 화면
+
+<p>
+<img width="200" alt="스크린샷 2022-04-12 오후 5 22 38" src="https://user-images.githubusercontent.com/75043852/162916510-a2779c85-73cb-4dfd-a7da-6dd3127e0224.png">
+<img width="200" alt="스크린샷 2022-04-12 오후 5 22 30" src="https://user-images.githubusercontent.com/75043852/162916514-5a849d55-2017-439e-bd98-746187cd6495.png">
+
+</p>
+
