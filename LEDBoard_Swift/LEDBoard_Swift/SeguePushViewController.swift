@@ -9,8 +9,16 @@ import UIKit
 
 class SeguePushViewController: UIViewController {
 
+    @IBOutlet weak var nameLabel: UILabel!
+    var name: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // segueWay가 실행되기 전, prepare에서 전달한 데이터가 name에 들어갔다면 표시
+        if let name = self.name {
+            self.nameLabel.text = name
+        }
        
     }
     
@@ -19,14 +27,6 @@ class SeguePushViewController: UIViewController {
     @IBAction func tapBackButton(_ sender: UIButton) {
         self.navigationController?.popViewController(animated:true)
     }
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    
 
 }

@@ -7,28 +7,48 @@
 
 import UIKit
 
-class ChangeViewController: UIViewController {
+protocol SendDataDelegate: AnyObject {
+    func sendData(name: String)
+}
 
+class ChangeViewController: UIViewController, SendDataDelegate {
+
+    @IBOutlet weak var nameLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
-
     @IBAction func tapCodePushButton(_ sender: UIButton) {
         //storyboard에 있는 viewController를 instantiate
-        guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "CodePushViewController") else { return }
+        guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "CodePushViewController") as? CodePushViewController else { return }
+        //데이터 넘겨주기
+        viewController.name = "Yang"
+        // 여기서 권한을 넘겨주는 것!
+        viewController.delegate = self
         //navigation에 전달
         self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     @IBAction func tapCodePresentButton(_ sender: UIButton) {
-        guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "CodePresentViewController") else {return}
+        guard let viewController = self.storyboard?.instantiateViewController(withIdentifier: "CodePresentViewController") as? CodePresentViewController else {return }
         //present 방식 설정
         viewController.modalPresentationStyle = .fullScreen
+        //data 넘겨주기
+        viewController.name = "Yang~"
+        // 여기서 권한을 넘겨주는 것!
+        viewController.delegate = self
         self.present(viewController, animated: true)
-                
-                
+    }
+    
+    //delegate 메서드 구현
+    func sendData(name: String) {
+        self.nameLabel.text = name
+    }
+    
+    // segueway를 실행하기 직전에, prepare가 자동으로 호출됨 .
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewController = segue.destination as? SeguePushViewController {
+            viewController.name = "segue로 데이터 전달"
+        }
     }
 }
