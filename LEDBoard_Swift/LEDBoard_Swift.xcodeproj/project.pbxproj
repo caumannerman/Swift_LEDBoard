@@ -18,6 +18,7 @@
 		A5375D5B280531F2000D7263 /* SeguePresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5375D5A280531F2000D7263 /* SeguePresentViewController.swift */; };
 		A5A3CFF128053DFA004F6AF8 /* CodePushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A3CFF028053DFA004F6AF8 /* CodePushViewController.swift */; };
 		A5A3CFF328053E54004F6AF8 /* ChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A3CFF228053E54004F6AF8 /* ChangeViewController.swift */; };
+		A5A3CFF528053FE9004F6AF8 /* CodePresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A3CFF428053FE9004F6AF8 /* CodePresentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		A5375D5A280531F2000D7263 /* SeguePresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeguePresentViewController.swift; sourceTree = "<group>"; };
 		A5A3CFF028053DFA004F6AF8 /* CodePushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePushViewController.swift; sourceTree = "<group>"; };
 		A5A3CFF228053E54004F6AF8 /* ChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeViewController.swift; sourceTree = "<group>"; };
+		A5A3CFF428053FE9004F6AF8 /* CodePresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePresentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				A5375D5A280531F2000D7263 /* SeguePresentViewController.swift */,
 				A5A3CFF028053DFA004F6AF8 /* CodePushViewController.swift */,
 				A5A3CFF228053E54004F6AF8 /* ChangeViewController.swift */,
+				A5A3CFF428053FE9004F6AF8 /* CodePresentViewController.swift */,
 			);
 			path = LEDBoard_Swift;
 			sourceTree = "<group>";
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A52EAA12277AE1D40031E8A5 /* ViewController.swift in Sources */,
+				A5A3CFF528053FE9004F6AF8 /* CodePresentViewController.swift in Sources */,
 				A5375D5928052CE3000D7263 /* SeguePushViewController.swift in Sources */,
 				A5A3CFF328053E54004F6AF8 /* ChangeViewController.swift in Sources */,
 				A5375D5B280531F2000D7263 /* SeguePresentViewController.swift in Sources */,
