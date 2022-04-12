@@ -489,6 +489,12 @@
                                     <action selector="tapBackButton:" destination="NMi-Ei-yN4" eventType="touchUpInside" id="uxD-JP-QqW"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QHt-rc-9hh">
+                                <rect key="frame" x="0.0" y="451.5" width="414" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1Is-ux-hqe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -497,10 +503,16 @@
                             <constraint firstItem="1Is-ux-hqe" firstAttribute="trailing" secondItem="Zsb-X0-Xeg" secondAttribute="trailing" constant="50" id="5wo-6O-N2C"/>
                             <constraint firstItem="s58-8r-0fl" firstAttribute="leading" secondItem="1Is-ux-hqe" secondAttribute="leading" constant="50" id="6LN-nU-Ykf"/>
                             <constraint firstItem="Zsb-X0-Xeg" firstAttribute="leading" secondItem="1Is-ux-hqe" secondAttribute="leading" constant="50" id="7zq-AC-Ai4"/>
+                            <constraint firstItem="QHt-rc-9hh" firstAttribute="top" secondItem="Zsb-X0-Xeg" secondAttribute="bottom" constant="50" id="ChH-5d-sIe"/>
+                            <constraint firstItem="QHt-rc-9hh" firstAttribute="leading" secondItem="1Is-ux-hqe" secondAttribute="leading" id="Xh3-nS-rvu"/>
                             <constraint firstItem="1Is-ux-hqe" firstAttribute="trailing" secondItem="s58-8r-0fl" secondAttribute="trailing" constant="50" id="chD-11-Occ"/>
                             <constraint firstItem="Zsb-X0-Xeg" firstAttribute="top" secondItem="s58-8r-0fl" secondAttribute="bottom" constant="200" id="nFz-Ee-CC1"/>
+                            <constraint firstItem="1Is-ux-hqe" firstAttribute="trailing" secondItem="QHt-rc-9hh" secondAttribute="trailing" id="rCt-RZ-h67"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="QHt-rc-9hh" id="wIE-yU-Tt8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hhF-Yq-0dX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

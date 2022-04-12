@@ -47,8 +47,17 @@ class ChangeViewController: UIViewController, SendDataDelegate {
     
     // segueway를 실행하기 직전에, prepare가 자동으로 호출됨 .
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //두가지의 SegueWay 관련 viewController 분기!!!
+        
         if let viewController = segue.destination as? SeguePushViewController {
             viewController.name = "segue로 데이터 전달"
+            //권한 위임!!!!
+            viewController.delegate = self
+        }
+        
+        else if let viewController = segue.destination as? SeguePresentViewController {
+            viewController.name = "segueWay로 Present에 데이터 전달"
+            viewController.delegate = self
         }
     }
 }

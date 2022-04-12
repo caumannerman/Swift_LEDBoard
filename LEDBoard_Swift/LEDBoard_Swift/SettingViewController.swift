@@ -73,6 +73,7 @@ final class SettingViewController: UIViewController {
     }
     
     @IBAction func tapSaveBtn(_ sender: UIButton) {
+        //위임받은 권한으로 이전 화면의 색상, text 변경 
         self.delegate?.changedSetting(
             //사용자가 입력한 텍스트를 넘겨줌 
             text: self.textField.text,
